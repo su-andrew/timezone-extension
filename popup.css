@@ -42,6 +42,23 @@ h1 {
   letter-spacing: 0;
 }
 
+.close-button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  background: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: var(--text);
+  background: #f0f3f7;
+}
+
 .converter {
   display: grid;
   gap: 8px;

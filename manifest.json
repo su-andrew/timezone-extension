@@ -3,8 +3,12 @@
   "name": "Three City Time Converter",
   "description": "Convert times between San Francisco, Atlanta, and London.",
   "version": "1.0.0",
+  "permissions": ["activeTab", "contextMenus", "scripting"],
   "action": {
     "default_title": "Time Converter",
     "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
