@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Three City Time Converter",
+  "description": "Convert times between San Francisco, Atlanta, and London.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Time Converter",
+    "default_popup": "popup.html"
+  }
+}

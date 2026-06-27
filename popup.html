@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <h1>Time zones</h1>
+      </header>
+
+      <section class="converter" aria-label="Time zone converter">
+        <div class="labels" aria-hidden="true">
+          <span>City</span>
+          <span>Day</span>
+          <span>Time</span>
+          <span>AM/PM</span>
+        </div>
+
+        <div class="row" data-city="san-francisco">
+          <label class="city" for="san-francisco-time">San Francisco</label>
+          <select class="day" aria-label="San Francisco day"></select>
+          <input
+            id="san-francisco-time"
+            class="time"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="7:00"
+            aria-label="San Francisco time"
+          >
+          <select class="period" aria-label="San Francisco AM or PM">
+            <option>AM</option>
+            <option selected>PM</option>
+          </select>
+        </div>
+
+        <div class="row" data-city="atlanta">
+          <label class="city" for="atlanta-time">Atlanta</label>
+          <select class="day" aria-label="Atlanta day"></select>
+          <input
+            id="atlanta-time"
+            class="time"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="10:00"
+            aria-label="Atlanta time"
+          >
+          <select class="period" aria-label="Atlanta AM or PM">
+            <option>AM</option>
+            <option selected>PM</option>
+          </select>
+        </div>
+
+        <div class="row" data-city="london">
+          <label class="city" for="london-time">London</label>
+          <select class="day" aria-label="London day"></select>
+          <input
+            id="london-time"
+            class="time"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="3:00"
+            aria-label="London time"
+          >
+          <select class="period" aria-label="London AM or PM">
+            <option selected>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
+      </section>
+
+      <p class="message" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
